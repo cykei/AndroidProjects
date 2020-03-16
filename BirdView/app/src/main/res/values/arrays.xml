@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type">
+        <item>모든 피부 타입</item>
+        <item>지성</item>
+        <item>건성</item>
+        <item>중성</item>
+    </string-array>
+
+</resources>
