@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="실시간 환율 : 1위안 = "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/plainFontSize"
+            android:textColor="@color/first"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/plainFontSize"
+            android:textColor="@color/first"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="업데이트 : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/first"
+            />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/first"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/layoutMargin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="환율 직접 지정 : 1위안 = "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/plainFontSize"
+            android:textColor="@color/first"
+            />
+
+        <EditText
+            android:id="@+id/editText_rate"
+            android:hint="정수입력"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/inputFontSize"
+            android:textColor="@color/first"
+            android:layout_weight="1"
+            />
+
+        <Button
+
+            android:id="@+id/button_set_rate"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="설정"
+            android:backgroundTint="@color/first"
+            android:textColor="#ffffff"
+            android:layout_gravity="end"
+            android:layout_weight="0"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/layoutMargin"
+        android:text="지금 사고 싶은게 몇 위안 입니까?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/plainFontSize"
+        android:textColor="@color/second"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/editText_price"
+            android:hint="숫자만 입력, 소수점 가능"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/plainFontSize"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            />
+        <Button
+            android:layout_marginLeft="@dimen/layoutMargin"
+            android:id="@+id/button_calc"
+            android:text="계산하기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/second"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/layoutMargin"
+        android:id="@+id/textView_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/plainFontSize"
+        android:textColor="@color/second"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/layoutMargin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="더치페이 인원 : "
+            android:textSize="@dimen/plainFontSize"
+            android:textColor="@color/third"
+            />
+        <EditText
+            android:id="@+id/editText_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/third"
+            android:textSize="@dimen/plainFontSize"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="명"
+            android:textColor="@color/third"
+            />
+        <Button
+            android:layout_marginLeft="@dimen/layoutMargin"
+            android:id="@+id/button_distribute"
+            android:text="계산하기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/third"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/layoutMargin"
+        android:id="@+id/textView_distribute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/plainFontSize"
+        android:textColor="@color/third"
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\@copyright cykei  중국여행용 계산기 "
+        android:textAlignment="textEnd"
+        android:layout_weight="0"
+        />
+</LinearLayout>
